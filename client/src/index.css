@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", serif;
+}
+
+/* NAVBAR */
+.navbar {
+  font-size: 16px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #434343, #000000);
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff !important;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffefba !important;
+  border-bottom: 2px solid #ffefba;
+}
+
+/* SEARCH BAR */
+.search-form {
+  margin-right: 10px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  width: 220px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-form button {
+  background: #000;
+  color: #fff;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.search-form button:hover {
+  background: #434343;
+}
+
+/* FOOTER */
+.footer {
+  padding: 30px;
+  background: linear-gradient(to right, #434343, #000000);
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #ffefba;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+  border-bottom: 1px solid #ffefba;
+}
+
+/* BUTTONS */
+button {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #434343;
+}
+
+/* PRODUCT CARDS */
+.home-page .card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-page .card:hover {
+  transform: scale(1.05);
+}
+
+.home-page .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.home-page .card-img-top:hover {
+  transform: scale(0.9);
+}
+
+.home-page .card-name-price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.home-page .card-price {
+  color: #27ae60;
+  font-size: 18px;
+}
+
+/* FILTER SECTION */
+.filters {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters h4 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* CATEGORY BUTTON */
+.cat-btn {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background: #000;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.cat-btn:hover {
+  background: #434343;
+  color: white;
+}
+
+/* CART PAGE */
+.cart-page {
+  margin-top: 64px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+.cart-page {
+  display: block; 
+  min-height: 100vh;
+}
+
+
+.cart-page h1 {
+  background: linear-gradient(to right, #000000, #434343);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cart-page .card {
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* PRODUCT DETAILS */
+.product-details {
+  margin-top: 50px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-details p {
+  font-size: 16px;
+  color: #777;
+}
+
+.similar-products .card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.similar-products .card:hover {
+  transform: scale(1.05);
+}
+
+/* FORMS */
+.form-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ffdee9, #b5fffc);
+}
+
+.form-container form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container form input {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-container form button {
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.form-container form button:hover {
+  background: #434343;
+}
+.filters {
+  margin-top: 40px; /* Adjust the value as needed */
+}
+.container {
+  padding-top: 80px; /* Adjust based on navbar height */
+}
