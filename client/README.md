@@ -23,7 +23,7 @@ A full-stack e-commerce platform for designing and ordering custom T-shirts, bui
 ### 1. Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/PallaviDev13/PallaviDev13-Customized-T-Shirt-ECommerce-Website.git
 npm i react-scripts
 cd client
 npm i
